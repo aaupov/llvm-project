@@ -284,8 +284,8 @@ private:
   /// everything
   bool hasData() const { return !ParsingBuf.empty(); }
 
-  /// Print heat map based on LBR samples.
-  std::error_code printLBRHeatMap();
+  /// Print heat map based on collected samples.
+  std::error_code printHeatMap();
 
   /// Parse a single perf sample containing a PID associated with a sequence of
   /// LBR entries. If the PID does not correspond to the binary we are looking
